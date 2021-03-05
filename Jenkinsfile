@@ -21,14 +21,14 @@ pipeline {
      }
     }
    
-   stage ('Source Composition Analysis'){
+/*   stage ('Source Composition Analysis'){
     steps{
      sh 'rm owasp* || true'
      sh 'wget "https://raw.githubusercontent.com/keshavkumar2021/webapp-1/master/owasp-dependency-check.sh"'
      sh 'chmod +x owasp-dependency-check.sh'
      sh 'bash owasp-dependency-check.sh'
     }
-   }
+   } */
    
     stage ('Build'){
       steps {
